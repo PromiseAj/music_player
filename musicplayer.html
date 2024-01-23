@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="musicplayer.css">
+    <script src="https://kit.fontawesome.com/8b65878429.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <div class="container">
+        <div class="music-player">
+            <nav>
+                <div class="circle">
+                
+                    <i class="fa-solid fa-angle-left"></i>
+                </div>
+
+                <div class="circle">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </nav>
+                    
+     
+            <img src="468-thumbnail.png" class="songImg">
+
+            <h1>Ancient Words</h1>
+            
+            <p>Michael W Smith</p>
+            
+            <audio id="song" src="Michael_W_Smith_-_Ancient_Words_CeeNaija.com_.mp3"></audio>
+            
+            <input type="range" value="0" id="progress">
+
+            <div class="controls">
+                
+                <div><i class="fa-solid fa-backward-fast"></i></div>
+                <div onclick="playPause()"><i class="fa-solid fa-circle-play" id="ctrlIcon"></i></div>
+                <div><i class="fa-solid fa-forward-fast"></i></div>
+
+            </div>
+        </div>
+    </div>
+    
+
+    <script src="musicplayer.js"></script>
+</body>
+</html>
